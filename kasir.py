@@ -77,7 +77,7 @@ if status == True:
         
         result = "| {}" + repeat(dotL1) + "{}" + repeat(dotL2) + "{} |";
         
-        print(result.format(item, select_count[index], str(iHarga)));
+        print(result.format(item, select_count[index], int(iHarga) * int(select_count[index])));
         print(dots);
         
         tot += int(select_count[index]) * int(iHarga);
