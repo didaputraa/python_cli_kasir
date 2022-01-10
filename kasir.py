@@ -72,10 +72,10 @@ if status == True:
     
     for item in select_menu:
         dotL1 = dot - (len(item) + 3) - 10;
-        dotL2 = 6 - len(select_count[index]);
+        dotL2 = 4 - len(select_count[index]);
         iHarga= list_harga[list_menu.index(item)];
         
-        result = "| {}" + repeat(dotL1) + "{}" + repeat(dotL2) + "{}|";
+        result = "| {}" + repeat(dotL1) + "{}" + repeat(dotL2) + "{} |";
         
         print(result.format(item, select_count[index], str(iHarga)));
         print(dots);
